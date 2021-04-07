@@ -81,4 +81,4 @@ for i in range(len(problems)):
 
 print("Almost done ...")
 time.sleep(3)
-print colored("Successfully Generated codeforces "+str(contestid)+".",'')
+print(colored("Successfully Generated codeforces "+str(contestid)+".",'green'))
