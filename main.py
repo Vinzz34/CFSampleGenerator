@@ -70,7 +70,7 @@ def io(prob_id):
 #main
 
 problems=soup.find('div',class_='datatable').find('table').findAll('a')
-print("Generating Problems ...")
+print("Generating Problems ...\n")
 
 for i in range(len(problems)):
     if(i%4!=0): continue
@@ -79,6 +79,6 @@ for i in range(len(problems)):
     io(prob_id)
     print("\n")
 
-print("Almost done ...")
+print("Almost done ...\n")
 time.sleep(3)
-print(colored("Successfully Generated codeforces "+str(contestid)+".",'green'))
+print(colored("Successfully Generated codeforces "+str(contestid)+".",'green',attrs=['bold']))
